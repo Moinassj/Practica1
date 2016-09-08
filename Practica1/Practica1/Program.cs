@@ -10,14 +10,17 @@ namespace Practica1
     {
         static void Main(string[] args)
         {
-            int Numero;
-            Numero = 1;
-            while (Numero <= 100)
-            {
-                Console.Write(Numero);
-                Console.Write(" - ");
-                Numero = Numero + 1;
-            }
+            Alumno _Alumno = new Alumno();
+            Profesor _Profesor = new Profesor();
+            _Alumno.Edad = 17;
+            _Alumno.Nombre = "JAMIE THOMAS";
+            _Alumno.NoControl = 338;
+            _Profesor.Edad = 23;
+            _Profesor.Nombre = "Erick lml";
+            _Profesor.Sueldos = 1;
+
+            Console.WriteLine("La edad del alumno es {0} su nombre es {1} y Numero de control {2}",_Alumno.Edad,_Alumno.Nombre,_Alumno.NoControl);
+            Console.WriteLine("La edad del profesor es {0} su nombre es {1} y sueldo {2}", _Profesor.Edad, _Profesor.Nombre, _Profesor.Sueldos);
             Console.ReadKey();
         }
     }
